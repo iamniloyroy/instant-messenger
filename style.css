@@ -1,0 +1,362 @@
+*{
+	font-family:monospace;
+}
+
+body{
+	background-color:#f7f7f7;
+
+	align-items:center;
+	justify-content:center;
+	display:flex;
+	min-height:90vh;
+}
+wrapper{
+	margin:0px;
+	position:center;
+	background-color:#fff;
+	width:200px;
+	padding:30px;
+	border-radius: 10px;
+	box-shadow:0px 32px 64px -48px black;
+	box-shadow:0px 0px 10px 0px grey;
+	}
+label{
+	font-size:17px;
+}
+.break{
+	padding-bottom:10px;
+	border-bottom:1px solid black;
+}
+input[type=text].userName{
+	margin-top:5px;
+	width:95%;
+	font-size:17px;
+	padding:5px;
+	border-radius:5px;
+	border:1px solid #ccc;
+
+}
+input[type=password].userName{
+	margin-top:5px;
+	width:95%;
+	font-size:17px;
+	padding:5px;
+	border-radius:5px;
+	border:1px solid #ccc;
+
+}
+input[type=submit].enter{
+	margin:0px;
+	margin-top:8px;
+	padding:5px;
+	background-color:#7878ef;
+	color:white;
+	cursor:pointer;
+	border-radius:8px;
+	border:2px solid #ccc;
+}
+input[type=submit].enter:hover{
+	background-color:white;
+	color:black;
+}
+wrapper.messageBox{
+	width:350px;
+	height:500px;
+	padding: 15px;
+	padding-right:22px;
+}
+div.chat{
+	padding: 3px;
+	border-radius: 5px;
+	display:flex;
+  flex-direction: column-reverse;
+  background-color: #f2f2f0;
+	border: 1px solid grey;
+  width: 100%;
+  height: 77%;
+  overflow: auto;
+}
+div.chat::-webkit-scrollbar {
+  width: 7px;               /* width of the entire scrollbar */
+}
+div.chat::-webkit-scrollbar-track {
+  background: grey;        /* color of the tracking area */
+}
+div.chat::-webkit-scrollbar-thumb {
+  background-color: white;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid black;  /* creates padding around scroll thumb */
+}
+div.messageBlockLeft{
+	float: left;
+	text-align: left;
+}
+div.messageBlockRight{
+	text-align: right;
+}
+div.messageBlockRight div.message	{
+	float: right;
+	background-color: white;
+	border:.5px solid grey;
+	padding:5px;
+	max-width: 70%;
+	word-wrap:break-word;
+	border-radius: 5px;
+	margin:3px;
+}
+div.messageBlockLeft div.message	{
+	float: left;
+	background-color: #326fff;
+	color: white;
+	border:.5px solid grey;
+	padding:5px;
+	max-width: 70%;
+	word-wrap:break-word;
+	border-radius: 5px;
+	margin:3px;
+}
+div.messageBlockRight div.uName{
+	padding:5px;
+	/* float: right; */
+}
+div.messageBlockLeft div.uName{
+	padding:5px;
+}
+br{
+	display: block;
+   margin: 10px;
+}
+input[type=text].messageText{
+	width: 80%;
+	margin-top:5px;
+	font-size:17px;
+	padding:5px;
+	border-radius:5px;
+	border:1px solid #ccc;
+}
+input[type=submit].sendMessage{
+	width: 14%;
+	float: right;
+	margin-top:5px;
+	padding:5px;
+	background-color:#e6e0df;
+	color:black;
+	border-radius:5px;
+	border:2px solid #ccc;
+}
+
+.chatUsername{
+	width:213px;
+	font-size:22px;
+	padding:0px;
+	float:left;
+}
+.clipboard{
+	height:17px;
+	width :17px;
+}
+.error{
+	width: 100%;
+	background-color: #ff1a00c2;
+	text-align: center;
+	padding:5px;
+	margin-top: 5px;
+	border-radius: 5px;
+	font-size:15px;
+	color:azure;
+	overflow-wrap: break-word;
+}
+ul {
+	all:unset;
+  width: 105%;
+	display:inline;
+}
+a{
+	text-decoration: none;
+	width: inherit;
+	display: block;
+	height:inherit;
+	padding:8px;
+}
+li{
+	text-align:center;
+	list-style: none;
+  border: 1px solid #ddd;
+  padding: 0px;
+	color: black;
+}
+li:first-of-type{
+	margin-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+li:last-child{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+li:nth-of-type(even) {
+    background-color: #f2f2f2;
+}
+li:hover {background-color: #ddd;}
+div.split{
+	width: 50%;
+	float: left;
+	align-items:center;
+	justify-content:center;
+	display:flex;
+	min-height:90vh;
+}
+
+div.conversations{
+	width: 95%;
+	padding:5px;
+	border: 1px solid #ddd;
+}
+div.conversations:hover{
+	background-color: #ddd;
+	color: black;
+}
+div.active a{
+	font-weight:bold;
+}
+div.message{
+	word-break: break-word;
+	}
+div.conversations:first-of-type{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+div.conversations:last-child{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+div.table{
+	max-height:300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+div.table::-webkit-scrollbar {
+  width: 7px;               /* width of the entire scrollbar */
+}
+div.table::-webkit-scrollbar-track {
+  background: grey;        /* color of the tracking area */
+}
+div.table::-webkit-scrollbar-thumb {
+  background-color: white;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid black;  /* creates padding around scroll thumb */
+}
+.logout{
+	position: absolute;
+	top:7px;
+	right:7px;
+	padding:10px;
+	background-color:blue;
+	color:white;
+	border:1px solid #ddd;
+	border-radius: 6px;
+	transition: all 0.2s linear 0s;
+}
+.logout:hover {
+    background-color: white !important;
+    color: blue;
+		cursor:pointer;
+}
+.exit{
+	width: auto;
+	height:auto;
+	padding: 5px;
+	color: white;
+	background-color:blue;
+	float: right;
+	font-size:22px;
+	margin-top: 18px;
+	border-radius: 6px;
+	border: 1px solid #ddd;
+	transition: all 0.2s linear 0s;
+}
+.exit:hover {
+    background-color: white !important;
+    color: blue;
+		cursor:pointer;
+
+}
+.names{
+	color: black;
+}
+.footer{
+	width: 100%;
+	text-align: center;
+	color: blue;
+	cursor:pointer;
+	margin-top:20px;
+}
+.img{
+	display: none;
+}
+#users{
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+.msgloaddiv{
+	align-items:center;
+	justify-content:center;
+	width: 100%;
+	height:auto;
+
+}
+.msgload{
+	margin-left: auto;
+  margin-right: auto;
+  width: 5%;
+	height: 1%;
+}
+p.addFriends{
+	float: right;
+	background-color:grey;
+	font-size:22px;
+	height: auto;
+	padding:5px;
+	padding-right: 9px;
+	padding-left:9px;
+	margin-top: 18px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close {
+	float: right;
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content {
+
+	border-radius: 30px;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
